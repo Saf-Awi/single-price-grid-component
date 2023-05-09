@@ -1,0 +1,173 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+--clr-Cyan: hsl(179, 62%, 43%);
+--clr-Bright-Yellow: hsl(71, 73%, 54%);
+--clr-Light-Gray: hsl(204, 43%, 93%);
+--clr-Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 400;
+    min-height: 100vh;
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+    background-color: var(--clr-Light-Gray);
+
+}
+
+.main-div {
+    width: 600px;
+    height: 375px;
+    color: var(--clr-Grayish-Blue);
+   
+  
+}
+
+/*-------- top ---------*/
+
+.top-text {
+    
+    width: 540px;
+    padding: 25px 30px;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.header-top {
+    color: var(--clr-Cyan);
+    font-weight: 700;
+}
+
+.subheader-top {
+    color: var(--clr-Bright-Yellow);
+}
+
+
+
+/*-------- bottom ---------*/
+.bottom-text {
+    display: flex;
+    width: 600px;
+    
+}
+
+.right, .left {
+   
+    width: 300px;
+    padding: 20px 0;
+    color: var(--clr-Light-Gray);
+    
+    
+}
+
+
+.right {
+    background-color: hsl(179, 46%, 59%);
+    line-height: 1.3;
+    border-radius: 0 0 10px 0;
+}
+
+ul {
+    list-style: none;
+    font-size: 15px;
+    
+
+}
+
+.why-us {
+    position: relative;
+    left: 40px;
+    color: white;
+    
+}
+
+.left {
+    background-color: var(--clr-Cyan); 
+    text-align: left;
+    border-radius: 0 0 0 10px;
+  
+}
+
+.monthly-sub, .price, .month-text, .sign-up-btn {
+    position: relative;
+    left: 20px;
+}
+
+.sign-up-btn {
+    padding: 15px 95px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: var(--clr-Bright-Yellow);
+    color: white;
+    cursor: pointer;
+    
+}
+
+.price {
+    color: hsla(203, 44%, 93%, 0.63);
+}
+
+span {
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
+
+.monthly-sub {
+    color: white;
+}
+
+/*--------mobile view----------*/
+
+@media screen and (max-width: 769px) {
+    .main-div {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        
+
+    }
+
+    .top-text {
+        width: 240px;
+        border-radius: 10px 10px 0 0;
+        
+    }
+
+    .paragraph-top {
+        line-height: 1.4;
+    }
+
+    .bottom-text {
+        flex-direction: column;
+    }
+
+    .right {
+        border-radius:  0 0 10px 10px;
+    }
+
+    .left {
+        border-radius: 0;
+     
+    }
+
+    .monthly-sub, .price, .month-text, .sign-up-btn {
+        position: relative;
+        left: 30px;
+    }
+
+    .attribution {
+        display: none;
+    }
+
+}
+
+
